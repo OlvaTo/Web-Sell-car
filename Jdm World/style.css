@@ -1,0 +1,293 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+}
+
+.navbar {
+  background: linear-gradient(to left, rgb(0, 0, 50), black);
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  position: relative; /* Menambahkan ini agar posisi absolut bekerja relatif terhadap navbar */
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  width: 100%; /* Memastikan ul menempati seluruh lebar navbar */
+}
+
+.navbar li {
+  list-style-type: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: blueviolet;
+  font-family: new amsterdam;
+  font-weight: 400;
+  font-size: 30px;
+  font-style: normal;
+  transition-duration: 600ms;
+}
+
+.navbar a:hover {
+  background-color: red;
+  color: black;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.Red {
+  position: absolute; /* Mengatur posisi absolut untuk menempatkan gambar di ujung kanan */
+  right: 0;
+  top: 0;
+}
+
+.Red img {
+  width: 250px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+}
+
+#Home {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.text-overlay {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.5); /* Warna latar belakang dengan transparansi */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  backdrop-filter: blur(5px); /* Efek blur */
+  -webkit-backdrop-filter: blur(5px); /* Efek blur untuk Safari */
+}
+
+.Mid {
+  font-family: baskervvile;
+  color: red;
+  font-style: bold;
+}
+
+.text-overlay p {
+  margin: 0;
+}
+
+#Home .headline {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: red;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+#Home h1 {
+  font-family: "Prata", serif;
+  font-size: 48px;
+  color: white;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: marquee 5s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+#Home img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h1 {
+  text-align: center;
+  margin: 10px;
+  color: blueviolet;
+  font-family: new amsterdam;
+  font-weight: 400;
+  font-size: 60px;
+  font-style: normal;
+}
+
+#Feedback {
+  text-align: start;
+  margin: 21px;
+  color: blueviolet;
+  font-family: new amsterdam;
+  font-weight: 400;
+  font-size: 60px;
+  font-style: normal;
+}
+
+.car {
+  gap: 100px;
+}
+
+#buycar {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap; /* Memungkinkan gambar berbaris ke bawah jika ruang tidak cukup */
+  justify-content: start;
+  align-items: start;
+  position: relative;
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.info {
+  width: 25%;
+  text-align: start;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  top: -20px; /* Mengangkat headline di atas gambar */
+  left: 0;
+  z-index: 1;
+}
+
+.info h3 {
+  font-family: lato;
+  margin: 0;
+  font-size: 24px;
+}
+
+#buycar ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 10px;
+}
+
+#buycar img {
+  width: 200px;
+  height: auto;
+  border-radius: 12px;
+  padding: 10px;
+  border-style: solid;
+}
+
+#buycar li {
+  border-radius: 12px;
+  background-color: white;
+  padding: 10px;
+  transition-duration: 400ms;
+}
+
+#buycar figcaption {
+  padding: 12px;
+  color: red;
+  font-family: DM Serif Text;
+}
+
+#buycar li:hover {
+  box-shadow: 0px 5px 15px 0px #000000;
+  transform: translatex(-10px);
+  border-radius: 12px;
+}
+
+#About {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.Container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  width: 250px;
+  text-align: center;
+  margin: 30px;
+  border-radius: 60px;
+}
+
+.Container1 ul {
+  list-style-type: none;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.Container1 li {
+}
+
+.Container1 img {
+  max-width: 100%;
+  text-align: center;
+  height: auto;
+  border-radius: 100px;
+}
+
+.Container1 h2 {
+  color: red;
+  font-family: DM Serif Text;
+}
+
+#Contact {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 2px;
+  font-size: 20px;
+  padding: 20px;
+}
+
+#Contact ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+#Contact li {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #000000;
+  box-shadow: 4px 5px;
+  transition-duration: 150ms;
+}
+
+#Contact a,
+i {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.instagram,
+.facebook,
+.tiktok {
+  background-color: #7c00fe;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 20px;
+  padding: 5px;
+  margin: 15px;
+  border-radius: 5px;
+}

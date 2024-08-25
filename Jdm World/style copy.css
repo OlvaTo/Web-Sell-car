@@ -1,0 +1,152 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #a39232;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+
+.wrapper {
+    padding: 100px 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    overflow: hidden;
+}
+
+.navbar {
+    background-color: #49297e;
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 1500ms, color 1000ms;
+}
+
+.navbar a:hover {
+    background-color: #00db96;
+    color: black;
+    transform: translate()
+}
+
+.toggle {
+    background-color: #e10086; 
+}
+
+.image {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.container1, .container2, .container3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    margin: 5px;
+    width: 350px;
+    height: 450px;
+    position: relative;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px 0;
+    background-color: #fdfb76;
+    transition: all 0.3s ease;
+}
+
+.container1:hover, .container2:hover, .container3:hover {
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.5); 
+    background-color: #ffd700;
+    transform: translateY(-10px);
+}
+
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.logo ul {
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+
+.logo li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #000000;
+    box-shadow: 4px 5px;
+    transition-duration: 150ms ;
+}
+
+.logo a, i {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+.instagram, .facebook, .tiktok  {
+    background-color: 7C00FE;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 20px;
+    padding: 5px;
+    margin: 15px;
+    border-radius: 5px;
+    
+}
+
+.logo .instagram:hover {
+    color: #962fbf;
+    background-color:	#d62976;
+}
+
+
+
+.logo .facebook:hover {
+    color: #00b3ff;
+    background-color: #0015ff;
+}
+
+
+
+.logo .tiktok:hover {
+    color: #f50000;
+    background-color: #040404;
+}
+
